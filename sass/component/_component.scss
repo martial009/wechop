@@ -1,0 +1,121 @@
+.home {
+    color: $color-primary !important;
+
+    &:hover {
+        border: none !important;
+        color: $color-primary;
+
+    }
+}
+a {
+    text-decoration: none;
+}
+.cta-btn {
+    width: 50%;
+    height: 4.3rem;
+    border-radius: 1rem;
+    background-image: linear-gradient(
+        to right, #ED1E26, #660708
+    );
+    background-image: --webkit-linear-gradient(
+        to bottom right, #ED1E26, #660708
+    );
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 4.2rem #fffefe74;
+    font-size: 1.8rem;
+    color: $color-white !important;
+    margin: 0 auto;
+    margin-top: 8rem;
+    display: block;
+    cursor: pointer;
+    transition: all .5s;
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    &:hover {
+        background-image: linear-gradient(
+        to right, #660708, #ED1E26, 
+     );
+        transition: all .5s;
+
+    }
+
+
+    & > * {
+
+        color: inherit;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    @media screen and (max-width: 980px) {
+        width: 90%;
+        margin-top: 2rem;
+    }
+    
+
+}
+button {
+    cursor: pointer;
+}
+.order-btn {
+    width: 15%;
+    height: 4rem;
+    border-radius: 1rem;
+    background-image: linear-gradient(
+        to right, #ED1E26, #660708
+    );
+    background-image: --webkit-linear-gradient(
+        to bottom right, #ED1E26, #660708
+    );
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    color: $color-white !important;
+    margin: 0 auto;
+    margin-top: 4rem;
+    display: block;
+    cursor: pointer;
+    transition: all .5s;
+    &:hover {
+        background-image: linear-gradient(
+        to right, #660708, #ED1E26, 
+     );
+        transition: all .5s;
+
+    }
+    @media screen and (max-width: 980px) {
+        width: 50%;
+    }
+    
+}
+
+.floatButton {
+    @media screen and (max-width: 980px) {
+       position: fixed;
+       bottom: 10%;
+       right: 1%;
+       height: 5.5rem;
+       width: 5.5rem;
+       border-radius: 50%;
+       background-color: rgb(65, 181, 69);
+       outline: none;
+       border: none;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+
+       & > * {
+           width: 70%;
+           height: 70%;
+       }
+     }
+}
