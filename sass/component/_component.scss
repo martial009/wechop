@@ -121,3 +121,8 @@ button {
        }
      }
 }
+.whatsapp-icon {
+    @media screen and (max-width: 980px) {
+        display: none;
+    }
+}

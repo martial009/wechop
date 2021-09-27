@@ -111,6 +111,10 @@ button {
         width: 70%;
         height: 70%; } }
 
+@media screen and (max-width: 980px) {
+  .whatsapp-icon {
+    display: none; } }
+
 .nav-link {
   height: 100%;
   display: flex;
@@ -163,6 +167,9 @@ button {
 .quantity {
   font-size: 1.9rem;
   font-weight: 500; }
+
+.copyright-text {
+  text-align: center; }
 
 .nav {
   display: flex;
@@ -325,7 +332,15 @@ button {
       width: 100%; }
 
 .footer {
-  height: 20rem;
+  height: 10rem;
   background-color: #2F2E41;
   color: #ffffff;
-  margin-top: 4rem; }
+  margin-top: 4rem;
+  padding: 0 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+  .footer__icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }

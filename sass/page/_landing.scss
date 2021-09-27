@@ -238,8 +238,18 @@
 }
 
 .footer {
-    height: 20rem;
+    height: 10rem;
     background-color: $color-black;
     color: $color-white;
     margin-top: 4rem;
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    &__icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
