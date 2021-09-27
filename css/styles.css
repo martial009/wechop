@@ -115,6 +115,10 @@ button {
   .whatsapp-icon {
     display: none; } }
 
+@media screen and (max-width: 600px) {
+  .footer-icons {
+    width: 25rem; } }
+
 .nav-link {
   height: 100%;
   display: flex;
