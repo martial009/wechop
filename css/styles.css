@@ -1,4 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@keyframes header {
+  from {
+    transform: translateX(10rem);
+    opacity: 0; }
+  to {
+    transform: translate(0);
+    opacity: 1; } }
+
+@keyframes sub-header {
+  from {
+    transform: translateX(-5rem);
+    opacity: 0; }
+  to {
+    transform: translate(0);
+    opacity: 1; } }
+
+@keyframes ad-text {
+  from {
+    transform: translateY(5rem);
+    opacity: 0; }
+  to {
+    transform: translate(0);
+    opacity: 1; } }
+
+@keyframes btn {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: .5; }
+  100% {
+    opacity: 1; } }
+
 *,
 *::before,
 *::after {
@@ -48,7 +80,8 @@ a {
   margin-top: 8rem;
   display: block;
   cursor: pointer;
-  transition: all .5s; }
+  transition: all .5s;
+  animation: btn 5s 2s; }
   .cta-btn:focus {
     box-shadow: none; }
   .cta-btn:hover {
@@ -124,15 +157,18 @@ button {
 
 .ad-header {
   font-size: 4.4rem;
-  color: #F50004; }
+  color: #F50004;
+  animation: header 5s; }
 
 .ad-sub-header {
   font-size: 3rem;
-  margin-left: 5rem; }
+  margin-left: 5rem;
+  animation: sub-header 5s; }
 
 .ad-text {
   margin-left: 3rem;
-  margin-top: 3rem; }
+  margin-top: 3rem;
+  animation: ad-text 5s; }
   @media screen and (max-width: 600) {
     .ad-text {
       margin-top: 1rem; } }

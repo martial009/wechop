@@ -8,15 +8,17 @@
 .ad-header {
     font-size: 4.4rem;
     color: $color-primary;
+    animation: header 5s;
 }
 .ad-sub-header {
     font-size: 3rem;
     margin-left: 5rem;
+    animation: sub-header 5s;
 }
 .ad-text {
     margin-left: 3rem;
     margin-top: 3rem;
-    
+    animation: ad-text 5s;
     @media screen and (max-width: 600) {
         margin-top: 1rem;
     }
